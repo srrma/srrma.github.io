@@ -26,10 +26,26 @@ nav ul li a {
     color: #fff;
 }
 
+.about {
+    margin-bottom: 20px;
+}
+
+.about img {
+    max-width: 100%; /* Set the maximum width to 100% of the parent container */
+    height: auto; /* Maintain aspect ratio, allowing the image to resize proportionally */
+}
+
+
 .logo {
     text-align: center;
     margin-bottom: 20px;
 }
+
+.logo img {
+    max-width: 100%; /* Set the maximum width to 100% of the parent container */
+    height: auto; /* Maintain aspect ratio, allowing the image to resize proportionally */
+}
+
 
 .hero {
     background-image: url('your-hero-background.jpg'); /* Add your hero background image here */
