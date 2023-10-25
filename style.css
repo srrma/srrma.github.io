@@ -1,84 +1,186 @@
-body {
-    font-family: Arial, sans-serif;
+/* General */
+body{
+    background-color: white;
+}
+/* The emerging W3C standard
+   that is currently Firefox-only */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: lightgray white;
+}
+
+/* Works on Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+
+*::-webkit-scrollbar-thumb {
+    background-color: lightgray;
+    border-radius: 20px;
+    border: 3px solid white;
+}
+  
+
+hr {
+    background-color: whitesmoke;
+}
+
+iframe{
+    width: max(33.3vw, 324px);
+    height: max(22.7vw, 135px);
+}
+
+img {
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select:none;
+    -webkit-touch-callout:none;
+}
+
+.shadowless {
+    box-shadow: none!important;
+}
+
+.code-tags span{
+    font-family: Consolas, monaco, monospace;
+    padding: 2px;
+    background-color: #b7e5c4;
+    background-color: whitesmoke;
+    margin-right: min(1vh, 1vw);
+}
+
+.my-highlight :hover{
+    background-color: whitesmoke;
+}
+
+
+/* Header */
+#my-title{
+    font-size: 3em;
+    text-align: center;
+}
+
+.my-header{
+    font-size: 1.5em;
+}
+
+
+/* Nav Bar */
+
+.my-nav a{
+    color: black;
+}
+
+.my-nav img{
+    height: min(10vh, 10vw);
+    width: min(10vh, 10vw);
+    position: relative;
+}
+
+.my-nav h2{
+    text-align: center;
+}
+
+.my-nav-content {
+    display: flex;
+    justify-content: center;
+}
+
+
+.my-nav-content ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+.my-nav-content li {
+    font-size: min(3h, 3vw);
+    float: left;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+
+.my-nav-content li a {
+    display: block;
+    color: black;
     text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
+    padding: 16px;
     text-decoration: none;
-    color: #fff;
 }
 
-.about {
-    margin-bottom: 20px;
+.my-nav-content li a:hover {
+    background-color: whitesmoke;
 }
 
-.about img {
-    max-width: 100%; /* Set the maximum width to 100% of the parent container */
-    height: auto; /* Maintain aspect ratio, allowing the image to resize proportionally */
-}
+/* tutorial nav */
 
-
-.logo {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.logo img {
-    max-width: 100%; /* Set the maximum width to 100% of the parent container */
-    height: auto; /* Maintain aspect ratio, allowing the image to resize proportionally */
-}
-
-
-.hero {
-    background-image: url('your-hero-background.jpg'); /* Add your hero background image here */
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
-}
-
-.portfolio {
+.tutorial-nav {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px;
 }
 
-.portfolio-item {
-    width: 30%;
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
+
+.tutorial-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.tutorial-nav li {
+    float: left;
+}
+
+
+.tutorial-nav li a {
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.tutorial-nav a:hover {
+    background-color: whitesmoke;
+}
+
+
+
+/* Other Project Reference Link */
+.other-projects{
+    margin-top: 2%;
+    color: lightgray;
+}
+
+.other-projects ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.other-projects li {
+    font-size: min(3.5vh, 3.5vw);
+    float: left;
+}
+
+
+.other-projects li a {
+    display: block;
+    color: lightgray;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.other-projects li a:hover{
+    color: gray;
+}
+
+/* Copy Right Logo */
+.my-copyright {
     text-align: center;
+    font-size: 1em;
+    color: black;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.float-right {
+    float: right;
 }
-
-
