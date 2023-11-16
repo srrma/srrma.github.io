@@ -1,9 +1,11 @@
-/* General */
-body{
-    background-color: white;
+/* Reset default margin and padding */
+body,
+html {
+    margin: 0;
+    padding: 0;
 }
-/* The emerging W3C standard
-   that is currently Firefox-only */
+
+/* The emerging W3C standard that is currently Firefox-only */
 * {
     scrollbar-width: thin;
     scrollbar-color: lightgray white;
@@ -14,173 +16,144 @@ body{
     width: 12px;
 }
 
-
+/* Scrollbar styling */
 *::-webkit-scrollbar-thumb {
     background-color: lightgray;
     border-radius: 20px;
     border: 3px solid white;
 }
-  
 
 hr {
     background-color: whitesmoke;
 }
 
-iframe{
-    width: max(33.3vw, 324px);
-    height: max(22.7vw, 135px);
+/* Apply a modern font and some basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
 }
 
-img {
-    pointer-events: none;
-    user-select: none;
-    -webkit-user-select:none;
-    -webkit-touch-callout:none;
+/* Container styles */
+.container {
+    width: 90%;
+    margin: 0 auto;
 }
 
-.shadowless {
-    box-shadow: none!important;
+/* Header styles */
+.my-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    color: #000;
 }
 
-.code-tags span{
-    font-family: Consolas, monaco, monospace;
-    padding: 2px;
-    background-color: #b7e5c4;
-    background-color: whitesmoke;
-    margin-right: min(1vh, 1vw);
-}
-
-.my-highlight :hover{
-    background-color: whitesmoke;
-}
-
-
-/* Header */
-#my-title{
-    font-size: 3em;
+/* Title styles */
+#my-title {
+    color: #000;
     text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
 
-.my-header{
-    font-size: 1.5em;
-}
-
-
-/* Nav Bar */
-
-.my-nav a{
+.my-nav a {
     color: black;
 }
 
-.my-nav img{
-    height: min(10vh, 10vw);
-    width: min(10vh, 10vw);
-    position: relative;
+.header {
+	font-size: 1.5em;
 }
 
-.my-nav h2{
+/* Navigation icon styles */
+.icons {
     text-align: center;
-}
-
-.my-nav-content {
-    display: flex;
-    justify-content: center;
-}
-
-
-.my-nav-content ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.my-nav-content li {
-    font-size: min(3h, 3vw);
-    float: left;
-}
-
-
-.my-nav-content li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 16px;
+    padding: 14px 16px;
     text-decoration: none;
+    font-size: 17px;
 }
 
-.my-nav-content li a:hover {
-    background-color: whitesmoke;
+/* Search and dark mode icon styles */
+.icons span {
+    margin-left: 20px;
+    cursor: pointer;
 }
 
-/* tutorial nav */
-
-.tutorial-nav {
-    display: flex;
+/* Main content styles */
+main {
+    padding: 20px 0;
 }
 
-
-.tutorial-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.tutorial-nav li {
-    float: left;
-}
-
-
-.tutorial-nav li a {
-    display: block;
-    padding: 16px;
-    text-decoration: none;
-}
-
-.tutorial-nav a:hover {
-    background-color: whitesmoke;
-}
-
-
-
-/* Other Project Reference Link */
-.other-projects{
-    margin-top: 2%;
-    color: lightgray;
-}
-
-.other-projects ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.other-projects li {
-    font-size: min(3.5vh, 3.5vw);
-    float: left;
-}
-
-
-.other-projects li a {
-    display: block;
-    color: lightgray;
-    padding: 16px;
-    text-decoration: none;
-}
-
-.other-projects li a:hover{
-    color: gray;
-}
-
-/* Copy Right Logo */
 .my-copyright {
-    text-align: center;
+    text-align: left;
     font-size: 1em;
     color: black;
 }
 
-.float-right {
-    float: right;
+/* Footer content layout */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left side of the footer */
+.footer-content .left {
+    text-align: left;
+}
+
+/* Right side of the footer */
+.footer-content .right {
+    text-align: right;
+}
+
+/* Footer icons */
+.footer-content .right a {
+    color: #000;
+    margin-left: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #121212;
+    color: #fff;
+}
+
+/* Dark mode toggle when in dark mode */
+.dark-mode .icons span {
+    color: #fff; /* Icon color for dark mode */
+}
+
+/* Card styles */
+.card {
+    background-color: #fff; /* Default card background */
+    color: #333; /* Default card text color */
+}
+
+/* Dark mode card styles */
+.dark-mode .card {
+    background-color: #333; /* Dark mode card background */
+    color: #fff; /* Dark mode card text color */
+}
+
+.dark-mode .my-copyright {
+	color: #fff;
+}
+
+/* Dark mode title */
+.dark-mode #my-title {
+    color: #fff; /* Title color for dark mode */
+}
+
+/* Dark mode nav */
+.dark-mode .my-nav a {
+	color: #fff;
+}
+
+.dark-mode .footer-content .right a {
+	color: #fff;
 }

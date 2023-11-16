@@ -1,71 +1,134 @@
 <!DOCTYPE html>
-<html>
-    <head>
-      <!-- This code is basically stolen from ImKennyYip. Go visit: https://github.com/ImKennyYip -->
-        <title>usrarama</title>
-        <meta name="author" content="usrarama">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="image_src" href="./Images/usrlogo.png">
-        <link rel="icon" href="./Images/usrlogo.png">
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>usrarama</title>
+    <meta name="author" content="Vincentius Yudhistira">
+    <meta name='theme-color' content='#4285F4'>
+    <link rel="icon" href="./Images/usrlogo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="canonical" href="https://usrarama.eu.org">
+</head>
 
-        <link rel="stylesheet" href="style.css">
-
-        <!-- Font Awesome Icons -->
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
-        <!-- Compiled and minified CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-        <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    </head>
-
-    <body>
-        <br>
-
-        <div class="container">
-            <div class="my-nav">
-                <div id="my-title"><b><a href="/">usrarama</a></b></div>
-                <div class="my-nav-content">
-                    <ul>
-                        <li><a href="https://instagram.com/usrarama?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
-                        <li><a href="https://github.com/srrma" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
-                    </ul>
-                </div>
+<body>
+    <div class="container">
+        <div class="my-nav">
+            <div id="my-title"><b><a href="https://usrarama.eu.org">usrarama</a></b></div>
+            <div class="icons">
+                <span id="dark-mode-toggle"><i class="fas fa-moon"></i></span>
             </div>
-          
-          <div>
-                <div class="my-header">About</div>
-                <p>
-                    Welcome to my bad looking website. Honestly, I don’t know what to add here. My plan is to add my portfolio here, but because I don’t have one as of right now, the contents is random.
-                </p>
-                <br>
-                <div>
+        </div>
+    </div>    
 
-            <div id="projects">
+    <main>
+        <div class="container">
+            <section>
+                <div class="header">About</div>
+                <p>Welcome to my website. I'm currently working on building my portfolio, so the content here is a bit random for now.</p>
+            </section>
 
-                <div class="my-header" id="portfolio">Portfolio?</div>
-                <br>
-
-                <!-- Projects -->
+            <section id="portfolio">
+                <div class="header">Portfolio?</div>
                 <div class="row">
-                    <!-- Portfolio -->
-                    <div class="col s12 m6 l4">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="./Images/kreatif-img.png">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title"></span>
-                            </div>
-                            <div class="card-action">
-                                <a href="kreatif-ink-ss.html" target="_blank">MORE</a>
-                            </div>
+                    <div class="col s12 m6 l4 card">
+                        <div class="card-image">
+                            <img src="./Images/kreatif-ink_ad.jpg" alt="Kreatif Ink">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Kreatif Ink Ad</span>
                         </div>
                     </div>
+
+                    <!-- Duplicate card -->
+                    <div class="col s12 m6 l4 card">
+                        <div class="card-image">
+                            <img src="./Images/public_001.jpg" alt="Lonely Man">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">PUBLIC RECORDS: Lonely Man</span>
+                        </div>
+                    </div>
+                    
+                    <div class="col s12 m6 l4 card">
+                        <div class="card-image">
+                            <img src="./Images/001_kntn.jpg" alt="Jajanan Sehat">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Jajanan Sehat</span>
+                        </div>
+                    </div>
+                    <!-- End of duplicate card -->
                 </div>
-              <a href="https://instagram.com/usrarama?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><p class="my-copyright">Vincentius Yudhistira &copy; 2023</p></a>
+            </section>
+        </div>
+    </main>
+
+       <div class="container">
+        <div class="footer-content">
+            <div class="left">
+                <p class="my-copyright">Vincentius Yudhistira &copy; 2023</p>
             </div>
-      </body>
+            <div class="right">
+                <a href="https://instagram.com/usrarama?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://github.com/srrma" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        // Function to toggle dark mode and change icon
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+
+            // Save the user's preference to local storage for persistence
+            const isDarkMode = body.classList.contains('dark-mode');
+            localStorage.setItem('darkMode', isDarkMode);
+
+            // Toggle between moon and sun icon based on dark mode status
+            const darkModeToggle = document.getElementById('dark-mode-toggle');
+            if (darkModeToggle) {
+                const icon = darkModeToggle.querySelector('i');
+                if (isDarkMode) {
+                    icon.classList.remove('fa-moon');
+                    icon.classList.add('fa-sun');
+                } else {
+                    icon.classList.remove('fa-sun');
+                    icon.classList.add('fa-moon');
+                }
+            }
+        }
+
+        // Function to load content or perform actions when the page loads
+        function onPageLoad() {
+            // Check if the user previously set dark mode preference and apply it
+            const savedDarkMode = localStorage.getItem('darkMode');
+            const body = document.body;
+            if (savedDarkMode === 'true') {
+                body.classList.add('dark-mode');
+            } else {
+                body.classList.remove('dark-mode');
+            }
+
+            // Additional initialization logic can be added here
+            // Fetching data, setting up event listeners, etc.
+        }
+
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        if (darkModeToggle) {
+            darkModeToggle.addEventListener('click', toggleDarkMode);
+        }
+
+        // Call the onPageLoad function when the page loads
+        onPageLoad();
+    </script>
+</body>
 </html>
-            
