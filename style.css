@@ -1,22 +1,18 @@
-/* Reset default margin and padding */
 body,
 html {
     margin: 0;
     padding: 0;
 }
 
-/* The emerging W3C standard that is currently Firefox-only */
 * {
     scrollbar-width: thin;
     scrollbar-color: lightgray white;
 }
 
-/* Works on Chrome/Edge/Safari */
 *::-webkit-scrollbar {
     width: 12px;
 }
 
-/* Scrollbar styling */
 *::-webkit-scrollbar-thumb {
     background-color: lightgray;
     border-radius: 20px;
@@ -24,25 +20,23 @@ html {
 }
 
 hr {
-    background-color: whitesmoke;
+	background-color: whitesmoke;
 }
 
-/* Apply a modern font and some basic styling */
-body {
-    font-family: Arial, sans-serif;
+.body {
+	font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f7f7f7;
     color: #333;
 }
 
-/* Container styles */
 .container {
     width: 90%;
     margin: 0 auto;
 }
 
 /* Header styles */
-.my-nav {
+.navi {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,8 +44,7 @@ body {
     color: #000;
 }
 
-/* Title styles */
-#my-title {
+#title {
     color: #000;
     text-align: center;
     padding: 14px 16px;
@@ -59,15 +52,14 @@ body {
     font-size: 17px;
 }
 
-.my-nav a {
+.navi a {
     color: black;
 }
 
 .header {
-	font-size: 1.5em;
+        font-size: 1.5em;
 }
 
-/* Navigation icon styles */
 .icons {
     text-align: center;
     padding: 14px 16px;
@@ -123,37 +115,51 @@ main {
     color: #fff;
 }
 
-/* Dark mode toggle when in dark mode */
 .dark-mode .icons span {
     color: #fff; /* Icon color for dark mode */
 }
 
-/* Card styles */
-.card {
-    background-color: #fff; /* Default card background */
-    color: #333; /* Default card text color */
-}
-
-/* Dark mode card styles */
-.dark-mode .card {
-    background-color: #333; /* Dark mode card background */
-    color: #fff; /* Dark mode card text color */
-}
-
 .dark-mode .my-copyright {
-	color: #fff;
+        color: #fff;
 }
 
 /* Dark mode title */
-.dark-mode #my-title {
+.dark-mode #title {
     color: #fff; /* Title color for dark mode */
 }
 
 /* Dark mode nav */
-.dark-mode .my-nav a {
-	color: #fff;
+.dark-mode .navi a {
+        color: #fff;
 }
 
 .dark-mode .footer-content .right a {
-	color: #fff;
+        color: #fff;
+}
+
+/* Grid and card styles */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.card {
+  width: calc(50% - 10px); /* Adjust width based on desired columns */
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+/* Media queries for responsive layout */
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
 }

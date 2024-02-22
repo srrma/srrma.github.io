@@ -43,3 +43,11 @@
 
         // Call the onPageLoad function when the page loads
         onPageLoad();
+        
+        // Masonry
+        document.addEventListener("DOMContentLoaded", function() {
+  var grid = document.querySelector('.grid');
+  var msnry = new Masonry(grid, {
+    // Optional Masonry options here
+  });
+});
