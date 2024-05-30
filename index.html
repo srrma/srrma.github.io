@@ -1,89 +1,91 @@
 <!DOCTYPE html>
-<html lang="en-US">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>usrarama</title>
     <meta name="author" content="Vincentius Yudhistira">
-    <link rel="icon" href="./Images/usrlogo.png">
+    <link rel="icon" href="#">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="canonical" href="https://usrarama.eu.org">
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap">
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </head>
-
 <body>
     <div class="container">
-        <div class="navi">
-            <div class="title">
-                <b>
-            <a href="https://usrarama.eu.org">usrarama</a>
-          </b>
-            </div>
-            <div class="icons">
-                <span id="dark-mode-toggle"><i class="fas fa-moon"></i></span>
-            </div>
+    <div class="navbar">
+        <div class="logo">
+            <a href="https://www.usrarama.eu.org"><img id="logo" src="./images/usrlogo.png"></a>
         </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
     </div>
+    </div>
+
     <div class="container">
-        <div class="header">About</div>
-        <p>Welcome to my website. I'm currently working on building my portfolio, so the content here is a bit random for now.</p>
+        <header>— srmm's portfolio directory</header>
     </div>
-    
-    <div class=container>
-        <div class="header">Portfolio</div>
+
+    <div class="container">
         <div class="grid">
-        	<div class="col s12 m6 14 card">
-                <div class="card-image"><img src="./Images/leaflettechno.jpg" alt="Amiya"></alt>
-                </div>
+            <div class="grid-item">
+                <img src="./images/Bismarck Zwei.png" alt="Image 1">
             </div>
-            <div class="col s12 m6 14 card">
-                <div class="card-image"><img src="./Images/Untitled5 (1).jpg" alt="Amiya"></alt>
-                </div>
+            <div class="grid-item">
+                <img src="./images/Shinano.png" alt="Image 1">
             </div>
-            <div class="col s12 m6 14 card">
-                <div class="card-image"><img src="./Images/86lena_artwork (1).jpg" alt="Vladilena Milize"></alt>
-                </div>
+            <div class="grid-item">
+                <img src="./images/sasakoi photo.png" alt="Image 1">
             </div>
-            <div class="col s12 m6 14 card">
-                <div class="card-image"><img src="./Images/20231220_122826.jpg" alt="Muelsyse"></alt>
-                </div>
+            <div class="grid-item">
+                <img src="./images/Skadi Ticket done.png" alt="Image 1">
             </div>
-            <div class="col s12 m6 14 card">
-                <div class="card-image"><img src="./Images/kreatif-ink_ad.jpg" alt="Kreatif Ink"></alt>
-                </div>
+            <div class="grid-item">
+                <img src="./images/Untitled5 (1).jpg" alt="Image 1">
             </div>
-            <div class="col s12 m6 14 card">
-                <div class="card-image"><img src="./Images/public_001.jpg" alt="Public Records"></alt>
-                </div>
+            <div class="grid-item">
+                <img src="./images/86lena_artwork (1).jpg" alt="Image 2">
             </div>
-            <div class="col s12 m6 14 card">
-                <div class="card-image"><img src="./Images/001_kntn.jpg" alt="Jajanan Sehat"></alt>
-                </div>
+            <div class="grid-item">
+                <img src="./images/20231220_122826 (1).jpg" alt="Image 3">
+            </div>
+            <div class="grid-item">
+                <img src="./images/public_001.jpg" alt="Image 4">
+            </div>
+            <div class="grid-item">
+                <img src="./images/001_kntn.jpg" alt="Image 5">
             </div>
         </div>
     </div>
 
     <div class="container">
-        <div class="footer-content">
-            <div class="left">
-                <p class="my-copyright">Vincentius Yudhistira &copy; 2023</p>
-            </div>
-            <div class="right">
-                <a href="https://instagram.com/usrarama?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://github.com/srrma" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
+        <div class="footer">
+        <div class="copyright">
+            <p>Vincentius Yudhistira &copy; 2023</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://instagram.com/usrarama?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/srrma" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
         </div>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var grid = document.querySelector('.grid');
+            var msnry = new Masonry(grid, {
+                itemSelector: '.grid-item',
+                columnWidth: '.grid-item',
+                percentPosition: true
+            });
+        });
+    </script>
 </body>
-
 </html>
