@@ -1,165 +1,103 @@
-body,
-html {
-    margin: 0;
-    padding: 0;
-}
-
-* {
-    scrollbar-width: thin;
-    scrollbar-color: lightgray white;
-}
-
-*::-webkit-scrollbar {
-    width: 12px;
-}
-
-*::-webkit-scrollbar-thumb {
-    background-color: lightgray;
-    border-radius: 20px;
-    border: 3px solid white;
-}
-
-hr {
-	background-color: whitesmoke;
-}
-
-.body {
-	font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f7f7f7;
+body {
+    font-family: 'Open Sans', sans-serif;
     color: #333;
 }
 
 .container {
     width: 90%;
     margin: 0 auto;
+    padding: 20px;
 }
 
-/* Header styles */
-.navi {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-    color: #000;
-}
-
-#title {
-    color: #000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.navi a {
-    color: black;
-}
-
-.header {
-        font-size: 1.5em;
-}
-
-.icons {
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-/* Search and dark mode icon styles */
-.icons span {
-    margin-left: 20px;
-    cursor: pointer;
-}
-
-/* Main content styles */
-main {
-    padding: 20px 0;
-}
-
-.my-copyright {
+.container .header {
     text-align: left;
     font-size: 1em;
     color: black;
 }
 
-/* Footer content layout */
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Left side of the footer */
-.footer-content .left {
-    text-align: left;
-}
-
-/* Right side of the footer */
-.footer-content .right {
+.container .social-icons {
     text-align: right;
 }
 
-/* Footer icons */
-.footer-content .right a {
+.container .social-icons a {
     color: #000;
     margin-left: 10px;
     font-size: 20px;
     text-decoration: none;
 }
 
-/* Dark mode styles */
-.dark-mode {
-    background-color: #121212;
-    color: #fff;
+.container .copyright {
+    text-align: left;
 }
 
-.dark-mode .icons span {
-    color: #fff; /* Icon color for dark mode */
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #fff;
 }
 
-.dark-mode .my-copyright {
-        color: #fff;
+/* Logo styling */
+.logo {
+    display: flex;
+    align-items: center;
 }
 
-/* Dark mode title */
-.dark-mode #title {
-    color: #fff; /* Title color for dark mode */
+#logo {
+    height: 40px;
+    width: auto;
 }
 
-/* Dark mode nav */
-.dark-mode .navi a {
-        color: #fff;
+/* Navbar links */
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.dark-mode .footer-content .right a {
-        color: #fff;
+.navbar li {
+    margin-left: 20px;
 }
 
-/* Grid and card styles */
+.navbar a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+/* Grid styles */
 .grid {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  padding: 0;
+    margin-left: -10px;
+    width: auto;
 }
 
-.card {
-  width: calc(50% - 10px); /* Adjust width based on desired columns */
-  margin: 5px;
-  box-sizing: border-box;
+.grid-item {
+    margin-bottom: 20px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    width: calc(50% - 10px); /* Two items per row, adjust margin */
+}
+
+.grid-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: none; /* Remove any borders */
 }
 
 /* Media queries for responsive layout */
 @media (max-width: 768px) {
-  .card {
-    width: calc(50% - 10px);
-  }
+    .grid-item {
+        width: calc(50% - 10px); /* Two items per row on medium screens */
+    }
 }
 
 @media (max-width: 480px) {
-  .card {
-    width: 100%;
-  }
+    .grid-item {
+        width: calc(100% - 10px); /* One item per row on small screens */
+    }
 }
