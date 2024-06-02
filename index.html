@@ -2,90 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>usrarama</title>
     <meta name="author" content="Vincentius Yudhistira">
-    <link rel="icon" href="#">
+    <link rel="icon" href="./images/logo/favicon.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap">
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <div class="container">
     <div class="navbar">
-        <div class="logo">
-            <a href="https://www.usrarama.eu.org"><img id="logo" src="./images/usrlogo.png"></a>
+        <div class="container">
+            <div class="logo">
+                <a href="https://www.usrarama.eu.org"><img id="logo" src="./images/logo/logo.png"></a>
+            </div>
+            <button class="hamburger-menu" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="./">Home</a></li>
+                <li><a href="./about">About</a></li>
+            </ul>
         </div>
-
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
-    </div>
     </div>
 
-    <div class="container">
-        <header>— srmm's portfolio directory</header>
-    </div>
+    <header class="bg-light py-3">
+        <div class="container">
+            <h1 class="text-left">— srmm's portfolio repository</h1>
+        </div>
+    </header>
 
-    <div class="container">
+    <div class="container my-4">
         <div class="grid">
-            <div class="grid-item">
-                <img src="./images/Bismarck Zwei.png" alt="Image 1">
-            </div>
-            <div class="grid-item">
-                <img src="./images/Shinano.png" alt="Image 1">
-            </div>
-            <div class="grid-item">
-                <img src="./images/sasakoi photo.png" alt="Image 1">
-            </div>
-            <div class="grid-item">
-                <img src="./images/Skadi Ticket done.png" alt="Image 1">
-            </div>
-            <div class="grid-item">
-                <img src="./images/Untitled5 (1).jpg" alt="Image 1">
-            </div>
-            <div class="grid-item">
-                <img src="./images/86lena_artwork (1).jpg" alt="Image 2">
-            </div>
-            <div class="grid-item">
-                <img src="./images/20231220_122826 (1).jpg" alt="Image 3">
-            </div>
-            <div class="grid-item">
-                <img src="./images/public_001.jpg" alt="Image 4">
-            </div>
-            <div class="grid-item">
-                <img src="./images/001_kntn.jpg" alt="Image 5">
-            </div>
+            <!-- Grid items will be dynamically added here -->
         </div>
     </div>
 
-    <div class="container">
-        <div class="footer">
-        <div class="copyright">
-            <p>Vincentius Yudhistira &copy; 2023</p>
+    <footer class="bg-light py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <p class="mb-0">&copy; 2024 Vincentius Yudhistira</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/usrarama" target="_blank" class="text-dark mx-2">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://github.com/srrma" target="_blank" class="text-dark mx-2">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
         </div>
-        <div class="social-icons">
-            <a href="https://instagram.com/usrarama?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://github.com/srrma" target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
-        </div>
-        </div>
-    </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var grid = document.querySelector('.grid');
-            var msnry = new Masonry(grid, {
-                itemSelector: '.grid-item',
-                columnWidth: '.grid-item',
-                percentPosition: true
-            });
-        });
-    </script>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
