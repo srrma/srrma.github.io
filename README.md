@@ -1,3 +1,3 @@
 # srrma.github.io
 
-Testing git or github dekstop
+Updating the site every once in a while
