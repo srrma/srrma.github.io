@@ -8,6 +8,10 @@ var msnry = new Masonry(grid, {
 
 // Simulate grid items loading dynamically
 const images = [
+    { webp: "./images/pj15.webp", fallback: "./images/img-fallback/pj15.png", alt: "ruri dragon", },
+    { webp: "./images/pj14.webp", fallback: "./images/img-fallback/pj14.png", alt: "tsumiki post", },
+    { webp: "./images/pj13.webp", fallback: "./images/img-fallback/pj13.png", alt: "ryo", },
+    { webp: "./images/pj12.webp", fallback: "./images/img-fallback/pj12.png", alt: "Boccher", },
     { webp: "./images/pj11.webp", fallback: "./images/img-fallback/pj11.png", alt: "Kazusa", },
     { webp: "./images/pj10.webp", fallback: "./images/img-fallback/pj10.png", alt: "Wisadel" },
     { webp: "./images/pj9.webp", fallback: "./images/img-fallback/pj9.png", alt: "Bismarck Zwei", },
