@@ -198,6 +198,9 @@ body {
   .contacts-grid {
     grid-template-columns: 1fr;
   }
+  .contacts-item {
+    font-size: 2rem;
+  }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   .featured-grid {
