@@ -5,22 +5,25 @@
     padding: 4rem 2rem;
     text-align: center;
     background-color: #fff;
-  }
-  .section-title-wrapper {
+}
+
+.section-title-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-  }
-  .section-title {
+}
+
+.section-title {
     font-family: 'Whyte Inktrap Super', sans-serif; 
     font-size: 2.5rem;
     margin-bottom: 2rem;
     color: var(--accent-purple);
     text-shadow: 2px 2px 1px #fff, 4px 4px 0px #000;
     text-align: center;
-  }
-  .back-arrow {
+}
+
+.back-arrow {
     position: absolute;
     left: 1rem;
     top: 30%;
@@ -29,48 +32,53 @@
     font-size: 1.5rem;
     color: #333;
     transition: color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .back-arrow:hover {
+}
+
+.back-arrow:hover {
     color: #555;
     transform: translateY(-50%) translateX(-5px);
-  }
-  
-  .back-arrow svg {
+}
+
+.back-arrow svg {
     width: 1.5rem;
     height: 1.5rem;
     vertical-align: middle;
-  }
-  .portfolio-grid {
+}
+
+.portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5rem;
     max-width: 1200px;
     margin: 0 auto;
-  }
-  .portfolio-item {
+}
+
+.portfolio-item {
     position: relative;
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  .portfolio-item img {
+}
+
+.portfolio-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
-  }
-  .portfolio-item:hover img {
+}
+
+.portfolio-item:hover img {
     transform: scale(1.1);
-  }
-  .portfolio-item:hover {
+}
+
+.portfolio-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-  }  
+}  
 
-  .portfolio-item::after {
+.portfolio-item::after {
     content: attr(data-title);
     position: absolute;
     bottom: 0;
@@ -85,9 +93,31 @@
     opacity: 0;
     transform: translateY(100%);
     transition: opacity 0.3s ease, transform 0.3s ease;
-  }
-  .portfolio-item:hover::after {
+}
+
+.portfolio-item:hover::after {
     opacity: 1;
     transform: translateY(0);
-  }
-  
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .section-title {
+        font-size: 2rem; /* Slightly smaller title for medium screens */
+    }
+    .back-arrow {
+        font-size: 1.3rem; /* Adjust back arrow size */
+    }
+}
+
+@media (max-width: 768px) {
+    .back-arrow {
+        font-size: 1.2rem; /* Further adjust back arrow size */
+    }
+}
+
+@media (max-width: 480px) {
+    .back-arrow {
+        font-size: 1rem; /* Smaller back arrow size */
+    }
+}

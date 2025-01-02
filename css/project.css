@@ -6,12 +6,14 @@
     margin: 20px auto;
     padding: 20px;
 }
+
 .project-title-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
 }
+
 .project-title {
     font-family: 'Whyte Inktrap Super', sans-serif; 
     font-size: 2.5rem;
@@ -19,8 +21,9 @@
     padding-top: 3rem;
     color: var(--accent-purple);
     text-align: left;
-  }
-  .back-arrow {
+}
+
+.back-arrow {
     position: absolute;
     left: 0.1rem;
     top: 10%;
@@ -29,37 +32,79 @@
     font-size: 1.5rem;
     color: #333;
     transition: color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .back-arrow:hover {
+}
+
+.back-arrow:hover {
     color: #555;
     transform: translateY(-50%) translateX(-5px);
-  }
-  
-  .back-arrow svg {
+}
+
+.back-arrow svg {
     width: 1.5rem;
     height: 1.5rem;
     vertical-align: middle;
-  }
+}
 
-  .project-tags {
+.project-tags {
     font-weight: bold;
     margin-bottom: 2rem;
-  }
+}
 
-  .project-about {
+.project-about {
     margin: 2rem auto;
     font-weight: bold;
-  }
+}
 
-  .project-about p {
+.project-about p {
     margin: 1rem auto;
     font-weight: normal;
-  }
+}
 
-  .project-showcase img {
+.project-showcase img {
     width: 100%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .project-title {
+        font-size: 2rem; /* Slightly smaller title for medium screens */
+    }
+    .back-arrow {
+        font-size: 1.3rem; /* Adjust back arrow size */
+    }
+}
+
+@media (max-width: 768px) {
+    .project-title {
+        font-size: 1.8rem; /* Smaller title for tablets */
+        padding-top: 3rem; /* Adjust padding */
+    }
+    .back-arrow {
+        font-size: 1.2rem; /* Further adjust back arrow size */
+    }
+    .project-tags {
+        font-size: 1.2rem; /* Adjust font size for tags */
+    }
+    .project-about {
+        margin: 1.5rem auto; /* Adjust margin */
+    }
+}
+
+@media (max-width: 480px) {
+    .project-title {
+        font-size: 1.5rem; /* Smaller title for mobile */
+        padding-top: 3rem; /* Adjust padding */
+    }
+    .back-arrow {
+        font-size: 1rem; /* Smaller back arrow size */
+    }
+    .project-tags {
+        font-size: 1rem; /* Smaller font size for tags */
+    }
+    .project-about {
+        margin: 1rem auto; /* Adjust margin */
+    }
+}

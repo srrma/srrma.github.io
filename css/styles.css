@@ -1,4 +1,5 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css);
+@import url(fonts.css);
 
 :root {
   --accent-purple: #5b58f4;
@@ -47,11 +48,10 @@ body {
   z-index: 1; 
   font-size: 2rem;
   font-weight: bold;
-  
 }
 
 .hero-content .p-2 {
-  font-size: 1.5rem;
+  font-size: calc(1.5rem * (100vw / 100));
   font-weight: normal;
 }
 
@@ -179,31 +179,46 @@ body {
   transform: scale(1.1);
 }
 
-.social-icons a {
+ .social-icons a {
   font-size: 1.5rem;
   color: #fff;
 }
 
-@media (hover: none) {
-  .featured-item {
-    transition: none;
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .featured-grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  .hero-content {
+    font-size: 1.5rem;
   }
 }
 
 @media (max-width: 768px) {
   .featured-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; 
   }
-
-  .contacts-grid {
-    grid-template-columns: 1fr;
+  .hero-content {
+    font-size: 1.2rem;
+    bottom: 1rem;
+    left: 1rem;
   }
   .contacts-item {
     font-size: 2rem;
   }
+  .footer-text p {
+    font-size: 1.5rem;
+  }
 }
-@media (min-width: 769px) and (max-width: 1024px) {
-  .featured-grid {
-    grid-template-columns: repeat(2, 1fr);
+
+@media (max-width: 480px) {
+  .hero-content {
+    font-size: 1rem;
+  }
+  .contacts-item {
+    font-size: 1.5rem;
+  }
+  .footer-text p {
+    font-size: 1.2rem;
   }
 }
