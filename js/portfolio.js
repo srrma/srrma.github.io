@@ -1,8 +1,8 @@
 const portfolioItems = [
-    { title: "Resplendent Color", image: "portfolio/resplendent/1_resplendent.webp", link: "project-list/resplendent-color.html" },
-    { title: "Unboxed", image: "portfolio/unboxed/1_unboxed.webp", link: "project-list/unboxed.html" },
-    { title: "Azure Ultra", image: "portfolio/azure ultra/1_azure.webp", link: "project-list/azure-ultra.html" },
-    { title: "Pop Display", image: "portfolio/pop display/1_pop_display.webp", link: "project-list/pop-display.html" },
+    { title: "Resplendent Color", image: "./portfolio/resplendent/1_resplendent.webp", link: "project-list/resplendent-color.html" },
+    { title: "Unboxed", image: "./portfolio/unboxed/1_unboxed.webp", link: "project-list/unboxed.html" },
+    { title: "Azure Ultra", image: "./portfolio/azure ultra/1_azure.webp", link: "project-list/azure-ultra.html" },
+    { title: "Pop Display", image: "./portfolio/pop display/1_pop_display.webp", link: "project-list/pop-display.html" },
   ];
 
   const portfolioGrid = document.getElementById("portfolioGrid");
