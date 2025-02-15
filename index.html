@@ -1,61 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Usrarama</title>
-  <link rel="icon" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-
-  <header class="hero">
-    <div class="hero-content">
-      <p>HELLO, I'M USRARAMA</p>
-      <p class="p-2">Hopefully a graphic designer. I do anything really</p>
-    </div>
-  </header>
-
-  <main>
-    <section id="featured" class="featured">
-      <h2 class="featured-title">Featured Works</h2>
-      <div class="featured-grid">
-        <a href="./project-list/pop-display.html" class="featured-item">
-          <img src="images/pj13.webp" alt="Work 1">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usrarama</title>
+    <meta name="description" content="Portfolio repository for usrarama. Contains all projects that I have worked on.">
+    <link rel="icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta property="og:title" content="Usrarama">
+    <meta property="og:description" content="Portfolio repository for usrarama. Contains all projects that I have worked on.">
+    <meta property="og:image" content="./images/hero-banner.png">
+    <meta property="og:url" content="https://usrarama.eu.org">
+    <meta name="twitter:card" content="summary_large_image">
+  </head>
+  <body class="font-sans">
+    <main>
+      <section id="hero" class="min-h-screen flex flex-col md:flex-row">
+        <div class="w-full min-h-[50vh] md:min-h-screen md:w-1/2 flex flex-col justify-center items-start bg-[#5b58f4] text-white p-10 text-left">
+          <h1 class="text-4xl md:text-5xl font-bold">Hello, <br>I'm usrarama </h1>
+          <p class="mt-4 text-lg">Hopefully a graphic designer. I do anything really</p>
+          <button class="mt-6 px-6 py-3 bg-white text-[#5b58f4] font-semibold rounded-lg shadow-md transition-transform duration-300 hover:scale-105" onclick="scrollToSection('featured')">Get Started</button>
+        </div>
+        <div class="w-full min-h-[50vh] md:min-h-screen md:w-1/2 relative bg-gray-200 overflow-hidden">
+          <img src="./images/hero-banner.png" alt="Custom Image" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+        </div>
+      </section>
+      <section id="featured" class="py-16 px-8 text-center bg-gray-100">
+        <h2 class="font-['Whyte_Inktrap_Super'] text-4xl mb-12 text-[#5b58f4]">Featured Works</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-7xl mx-auto">
+          <a href="./project-list/pop-display.html" class="block overflow-hidden rounded-lg transition-transform duration-300 ease-in-out shadow-md hover:shadow-xl perspective relative">
+            <img src="./images/pj13.webp" alt="Work 1" class="w-full h-full md:h-80 lg:h-full object-cover block transition-transform duration-100 ease-in-out">
+          </a>
+          <a href="./project-list/pop-display.html" class="block overflow-hidden rounded-lg transition-transform duration-300 ease-in-out shadow-md hover:shadow-xl perspective relative">
+            <img src="./images/pj14.webp" alt="Work 2" class="w-full h-full md:h-80 lg:h-full object-cover block transition-transform duration-100 ease-in-out">
+          </a>
+          <a href="./project-list/pop-display.html" class="block overflow-hidden rounded-lg transition-transform duration-300 ease-in-out shadow-md hover:shadow-xl perspective relative">
+            <img src="./images/pj7.webp" alt="Work 3" class="w-full h-full md:h-80 lg:h-full object-cover block transition-transform duration-100 ease-in-out">
+          </a>
+        </div>
+      </section>
+      <section id="contacts" class="py-20 px-6 text-center font-['Whyte_Inktrap_Super'] bg-[#5b58f4]">
+        <div class="max-w-6xl mx-auto space-y-6">
+          <a href="./portfolio.html" class="group flex items-center justify-between relative p-6 md:p-8 text-white text-lg sm:text-4xl md:text-6xl font-bold transition-transform duration-300 ease-in-out hover:scale-105 border-b border-gray-300">
+            <h3 class="group-hover:translate-x-2 transition-transform duration-200">View Portfolio</h3>
+            <span class="fas fa-angle-right transition-transform duration-200 group-hover:translate-x-2"></span>
+          </a>
+          <a href="./about.html" class="group flex items-center justify-between relative p-6 md:p-8 text-white text-lg sm:text-4xl md:text-6xl font-bold transition-transform duration-300 ease-in-out hover:scale-105 border-b border-gray-300">
+            <h3 class="group-hover:translate-x-2 transition-transform duration-200">About</h3>
+            <span class="fas fa-angle-right transition-transform duration-200 group-hover:translate-x-2"></span>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="p-8 bg-gray-900 text-white flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+      <div class="mb-4 md:mb-0">
+        <p class="m-0 font-['Whyte_Inktrap_Super'] text-2xl font-bold">Hi.</p>
+      </div>
+      <div class="flex space-x-4">
+        <a href="https://x.com/atkviss" class="text-white text-xl transition-transform duration-300 ease-in-out hover:scale-110">
+          <i class="fab fa-twitter"></i>
         </a>
-        <a href="./project-list/pop-display.html" class="featured-item">
-          <img src="images/pj7.webp" alt="Work 2">
-        </a>
-        <a href="./project-list/pop-display.html" class="featured-item">
-          <img src="images/pj14.webp" alt="Work 3">
+        <a href="https://www.instagram.com/viinumi/" class="text-white text-xl transition-transform duration-300 ease-in-out hover:scale-110">
+          <i class="fab fa-instagram"></i>
         </a>
       </div>
-    </section>
-
-    <section id="contacts" class="contacts">
-      <div class="contacts-grid">
-        <a href="./portfolio" class="contacts-item">
-          <h3>View Portfolio</h3>
-        </a>
-        <a href="./about" class="contacts-item">
-          <h3>About</h3>
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footer-text">
-      <p>Hi.</p>
-    </div>
-    <div class="social-icons">
-      <a href="https://x.com/atkviss"><i class="fab fa-twitter"></i></a> 
-      <a href="https://www.instagram.com/viinumi/"><i class="fab fa-instagram"></i></a> 
-    </div>
-  </footer>
-
-  <script src="js/script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
-
-</body>
+    </footer>
+    <script src="./js/3d.js"></script>
+  </body>
 </html>
